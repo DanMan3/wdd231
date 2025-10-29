@@ -1,0 +1,102 @@
+@media screen and (min-width: 840px) {
+
+    :root {
+        --primary-color: #0B3D91;
+        --secondary-color: #8b391f;
+        --text-active: #00C2A8;
+
+        --heading-font: 'Oswald', sans-serif;
+        --primary-font: 'Roboto', sans-serif;
+        --primary-text: #ffffff;
+        --secondary-text: rgb(140, 140, 140);
+        --dark-text: rgb(85, 85, 85);
+        --card-text: rgb(45, 45, 45);
+
+        --background-color: rgb(197, 197, 197);
+        --bottom-panel-height: 68px;
+        --bottom-panel-bg: rgba(11, 61, 145, 0.95);
+        --form-color: #183267;
+
+    }
+
+    .page-width {
+        max-width: 840px;
+        justify-self: center;
+    }
+
+    .page-width-main {
+        margin: 0;
+    }
+
+    .about-me {
+        max-width: 70rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .student-info {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+        background-color: var(--primary-color);
+    }
+
+    .navigation li {
+        display: flex;
+        border: none;
+    }
+
+    .social-media {
+        gap: 2rem;
+    }
+
+    .course-credits-number {
+        font-size: 18px;
+    }
+
+    /* Course filters buttons */
+
+    .course-filters {
+        justify-content: space-between;
+    }
+
+    .course-filters button {
+        background-color: var(--primary-color);
+        color: var(--primary-text);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px -3px 10px 1px rgb(0 0 0 / 0.3);
+        font-weight: bold;
+        width: 17rem;
+    }
+
+    .course-filters button:hover {
+        background-color: var(--text-active);
+    }
+
+    .dot-separator {
+        display: unset;
+    }
+
+    .copyright-wrapper {
+        flex-direction: row;
+    }
+
+
+    li a:hover {
+        color: var(--text-active);
+        text-decoration: underline;
+    }
+
+
+    header {
+        gap: 8px;
+    }
+
+}

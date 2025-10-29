@@ -1,0 +1,286 @@
+:root {
+    --primary-color: #0B3D91;
+    --secondary-color: #8b391f;
+    --text-active: #00C2A8;
+
+    --heading-font: 'Oswald', sans-serif;
+    --primary-font: 'Roboto', sans-serif;
+    --primary-text: #ffffff;
+    --secondary-text: rgb(140, 140, 140);
+    --dark-text: rgb(85, 85, 85);
+    --card-text: rgb(45, 45, 45);
+
+    --background-color: rgb(197, 197, 197);
+    --bottom-panel-height: 68px;
+    --bottom-panel-bg: rgba(11, 61, 145, 0.95);
+    --form-color: #183267;
+    --button-color: rgba(255, 138, 101, 0.75);
+
+
+}
+
+* {
+    font-family: var(--primary-font);
+}
+
+header img {
+    background-color: white;
+    padding: 2px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    /* redundant if * reset exists but safe */
+}
+
+body {
+    min-height: 100vh;
+}
+
+.page-width {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.page-width-main {
+    margin: 8px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    margin: 0;
+
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    font-size: 1.2rem;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header img {
+    max-width: 2.5rem;
+    margin-left: 5px;
+}
+
+/* Nav */
+
+.site-logo {
+    color: var(--primary-text);
+}
+
+.site-name {
+    font-size: 20px;
+    margin: 0;
+    color: var(--primary-text);
+    font-weight: bold;
+}
+
+
+.navigation li {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    display: none;
+}
+
+.navigation.open li {
+    display: block;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: var(--primary-text);
+}
+
+
+
+/* Hamburger menu */
+
+.menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    color: var(--primary-text);
+    margin-right: 8px;
+    margin-left: auto;
+    width: 40px;
+    height: 36px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.menu-button::before {
+    content: "☰";
+    font-size: 1.5rem;
+    width: 30px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+}
+
+.menu-button.open::before {
+    content: "X";
+    font-size: 1.5rem;
+    width: 30px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    background-color: var(--text-active);
+}
+
+
+/* Main */
+
+.daniel-photo {
+    max-width: 19.1rem;
+    display: block;
+    justify-self: center;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+section p {
+    background-color: var(--background-color);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-media a img {
+    width: 40px;
+    height: auto;
+    display: block;
+}
+
+.about-me {
+    background-color: var(--background-color);
+}
+
+.about-me p {
+    padding: 8px;
+    font-size: 16px;
+}
+
+
+/* Courses */
+
+.courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.courses-list p {
+    padding: 5px;
+}
+
+/* Course filter buttons */
+.course-filters {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.course-filters button {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px -3px 10px 1px rgb(0 0 0 / 0.3);
+}
+
+.course-filters button:active {
+    background-color: var(--text-active);
+}
+
+/* Course credits */
+
+.course-credits-number {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.copyright-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text);
+}
+
+.dot-separator {
+    font-size: 20px;
+}
+
+.footer-name,
+.last-modified,
+.copyright,
+.current-year,
+.copyright-year {
+    font-size: 14px;
+    color: var(--primary-text);
+}
+
+.last-modified-date {
+    font-style: italic;
+    color: var(--primary-text);
+}

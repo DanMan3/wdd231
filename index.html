@@ -4,34 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <meta name="description" content="">
+    <title>Daniel Bennion — Web Portfolio</title>
+    <meta name="description" content="A web portfolio page for Daniel Bennion">
     <meta name="author" content="Daniel Bennion">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
-    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
 </head>
 
+
+
 <body>
+    <div class="page-width">
 
-    <header>
+        <header>
+            <img src="images/bennion-webworks-logo.svg" alt="Bennion Webworks logo" class="site-logo">
+            <p class="site-name">Bennion Webworks</p>
 
-    </header>
+            <button class="menu-button" aria-label="Toggle navigation menu"></button>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="old">Home</a></li>
+                <li><a href="#" id="new">Chamber Project</a></li>
+                <li><a href="#" id="large">Final Project</a></li>
+            </ul>
+        </nav>
 
-    <main>
 
-    </main>
+        <div class="page-width-main">
 
-    <footer>
+            <main>
+                <h1>Home</h1>
 
-    </footer>
+                <div class="sections">
+                    <div class="student-info">
+                        <section class="about-me">
+                            <h2>About Me</h2>
+                            <p>My name is Daniel Bennion. I'm a student of Software Engineering at BYU Pathway
+                                Worldwide. My enthusiasm for technology has sparked a desire to study it. I have many
+                                interests, including skiing, hunting, fishing, fourwheeling, 3D printing, ham radio,
+                                cars, and much more. My desire is to get educated so I can support a family.
+                            </p>
+                        </section>
+                        <section class="student-photo">
+                            <h2>Student Photo</h2>
+                            <img src="images/daniel.webp" alt="photo of Daniel Bennion" class="daniel-photo">
+                        </section>
+                    </div>
+                    <section>
+                        <h2>Web Certificate Courses</h2>
+                        <div class="course-filters">
+                            <button type="button" data-filter="all">All Courses</button>
+                            <button type="button" data-filter="wdd">WDD Courses</button>
+                            <button type="button" data-filter="cse"> CSE Courses</button>
+                        </div>
+                        <div class="courses-list"></div>
+                    </section>
+                    <em class="course-credits-number"> </em>
+                </div>
+                <div>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/danielbennion1" target="_blank" rel="noopener noreferrer"
+                            aria-label="Daniel Bennion on LinkedIn" title="LinkedIn">
+                            <img src="images/linkedin-logo.svg" alt="LinkedIn logo">
+                        </a>
+                        <a href="https://github.com/DanMan3" target="_blank" rel="noopener noreferrer"
+                            aria-label="Daniel Bennion on GitHub" title="GitHub">
+                            <img src="images/github-logo.svg" alt="GitHub logo">
+                        </a>
+                        <a href="https://www.x.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Daniel Bennion on X" title="X">
+                            <img src="images/x-logo.svg" alt="X logo">
+                        </a>
+                        <a href="https://www.facebook.com/daniel.bennion.2025" target="_blank" rel="noopener noreferrer"
+                            aria-label="Daniel Bennion on Facebook" title="Facebook">
+                            <img src="images/facebook-logo.svg" alt="Facebook logo">
+                        </a>
+                    </div>
+                </div>
 
+            </main>
+
+            <footer>
+                <div class="separator"></div>
+                <div class="copyright-wrapper">
+                    <p class="copyright-year">©<span id="current-year"></span></p>
+                    <span class="dot-separator">&#x2022;</span>
+                    <p class="copyright">
+                        Daniel Bennion Utah, USA
+                    </p>
+                    <span class="dot-separator">&#x2022;</span>
+                    <p class="last-modified">
+                        Last modified: <span id="lastModified" class="last-modified-date"></span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
 </body>
+
 
 </html>
