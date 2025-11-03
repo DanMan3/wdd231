@@ -1,0 +1,48 @@
+{
+    "family-name": "Bourne",
+    "moved-in": "5/1/21",
+    "number-of-records": "8",
+    "visited?": "false",
+    "data": [
+        {
+            "name": "Json",
+            "gender": "M",
+            "birthdate": "5/21/75"
+        },
+        {
+            "name": "Michaela",
+            "gender": "F",
+            "birthdate": "1/21/78"
+        },
+        {
+            "name": "Sarah",
+            "gender": "F",
+            "birthdate": "9/9/2005"
+        },
+        {
+            "name": "Jackson",
+            "gender": "M",
+            "birthdate": "2/14/2008"
+        },
+        {
+            "name": "James",
+            "gender": "M",
+            "birthdate": "6/26/2010"
+        },
+        {
+            "name": "Jacob",
+            "gender": "M",
+            "birthdate": "12/4/2012"
+        },
+        {
+            "name": "Jaron",
+            "gender": "M",
+            "birthdate": "3/19/2016"
+        },
+        {
+            "name": "Michaela",
+            "gender": "M",
+            "birthdate": "4/1/2019"
+        }
+    ]
+}
