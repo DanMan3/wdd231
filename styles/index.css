@@ -113,6 +113,20 @@ header img {
 .navigation li a {
     text-decoration: none;
     color: var(--primary-text);
+    display: block;
+}
+
+.navigation.open li:active {
+    background-color: var(--text-active);
+}
+
+a,
+button,
+.menu-button,
+.navigation li,
+.navigation li a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 

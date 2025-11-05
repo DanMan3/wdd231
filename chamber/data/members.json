@@ -1,0 +1,130 @@
+{
+    "companies": [
+        {
+            "id": 1,
+            "name": "Valley Hardware",
+            "address": {
+                "street": "102 Main St",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "phone": "(801) 555-0101",
+            "website": "https://www.valleyhardware.example",
+            "image": "images/valley-hardware.jpg",
+            "membershipLevel": 3,
+            "category": "Home & Garden",
+            "email": "info@valleyhardware.example",
+            "hours": "Mon-Sat 8:00-18:00",
+            "description": "Full-service hardware store with tool rental and local delivery."
+        },
+        {
+            "id": 2,
+            "name": "American Fork Bakery",
+            "address": {
+                "street": "44 Center Plaza",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "phone": "(801) 555-0123",
+            "website": "https://www.afbakery.example",
+            "image": "images/af-bakery.jpg",
+            "membershipLevel": 2,
+            "category": "Food & Beverage",
+            "email": "hello@afbakery.example",
+            "hours": "Daily 6:00-16:00",
+            "description": "Artisan breads, pastries, and custom cakes made daily."
+        },
+        {
+            "id": 3,
+            "name": "Canyon Dental Clinic",
+            "address": {
+                "street": "210 River Rd",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "phone": "(801) 555-0145",
+            "website": "https://www.canyondental.example",
+            "image": "images/canyon-dental.jpg",
+            "membershipLevel": 3,
+            "category": "Health & Wellness",
+            "email": "appointments@canyondental.example",
+            "hours": "Mon-Fri 9:00-17:00",
+            "description": "Family dentistry, emergency visits, and orthodontics."
+        },
+        {
+            "id": 4,
+            "name": "Summit Realty Group",
+            "address": {
+                "street": "8 Pine Ave",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "phone": "(801) 555-0167",
+            "website": "https://www.summitrealty.example",
+            "image": "images/summit-realty.jpg",
+            "membershipLevel": 1,
+            "category": "Real Estate",
+            "email": "agents@summitrealty.example",
+            "hours": "Mon-Fri 8:30-17:30",
+            "description": "Residential and commercial real estate services."
+        },
+        {
+            "id": 5,
+            "name": "Pioneer Cafe",
+            "address": {
+                "street": "77 Market St",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "phone": "(801) 555-0189",
+            "website": "https://www.pioneercafe.example",
+            "image": "images/pioneer-cafe.jpg",
+            "membershipLevel": 2,
+            "category": "Food & Beverage",
+            "email": "contact@pioneercafe.example",
+            "hours": "Daily 7:00-20:00",
+            "description": "Local cafe serving breakfast, lunch, and specialty coffee."
+        },
+        {
+            "id": 6,
+            "name": "Lakeside Plumbing Co.",
+            "address": {
+                "street": "305 Industrial Way",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "phone": "(801) 555-0202",
+            "website": "https://www.lakesideplumbing.example",
+            "image": "images/lakeside-plumbing.jpg",
+            "membershipLevel": 1,
+            "category": "Trades & Services",
+            "email": "service@lakesideplumbing.example",
+            "hours": "24/7 emergency service",
+            "description": "Residential and commercial plumbing, repairs, and installs."
+        },
+        {
+            "id": 7,
+            "name": "Heritage Bookstore",
+            "address": {
+                "street": "12 Oak St",
+                "city": "American Fork",
+                "state": "UT",
+                "zip": "84003"
+            },
+            "phone": "(801) 555-0224",
+            "website": "https://www.heritagebooks.example",
+            "image": "images/heritage-bookstore.jpg",
+            "membershipLevel": 2,
+            "category": "Retail",
+            "email": "books@heritagebooks.example",
+            "hours": "Tue-Sat 10:00-18:00",
+            "description": "Independent bookstore with events, local authors, and gift items."
+        }
+    ]
+}
