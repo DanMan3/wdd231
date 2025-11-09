@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Fork Chamber Directory — Home</title>
+    <meta name="description"
+        content="American Fork Chamber — events, news, and local business resources for our community.">
+    <meta property="og:title" content="American Fork Chamber Directory — Home">
+    <meta property="og:description"
+        content="American Fork Chamber — events, news, and local business resources for our community.">
+    <!-- absolute image must be a url -->
+    <meta property="og:image" content="https://danman3.github.io/wdd231/chamber/images/og_image.png">
+    <meta property="og:url" content="https://danman3.github.io/wdd231/chamber/index.html">
+    <meta name="author" content="Daniel Bennion">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/index.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="business-branding">
+            <a class="brand" href="index.html">
+                <img src="images/business-logo.svg" alt="American Fork Chamber">
+            </a>
+            <span class="site-title">American Fork Chamber</span>
+        </div>
+
+        <button class="menu-button" aria-label="Toggle navigation menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="page-width">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero.jpg" type="image/jpg">
+                    <img src="images/hero.jpg" alt="Main Street, American Fork, Utah — local shops and community"
+                        loading="lazy" width="1600" height="900">
+                </picture>
+
+                <!-- <button class="join-chamber-button" href="join.html">Join Chamber</button> -->
+                <a class="join-chamber-button" href="join.html">Join Chamber</a>
+
+
+            </div>
+
+
+            <h1>Home</h1>
+
+            <div class="events-weather">
+                <section class="events-section">
+                    <h2>Events</h2>
+                    <ul class="events">
+                        <li class="event">
+                            Nov 22, 2025 — <strong>Small Business Saturday
+                                Market</strong><br>
+                            10:00 AM — 3:00 PM — Main Street Plaza. Local vendors, live music, family activities.
+                        </li>
+                        <li class="event">
+                            Nov 28, 2025 — <strong>Holiday Lighting & Main Street
+                                Stroll</strong><br>
+                            6:00 PM — Downtown American Fork. Tree lighting, shopping specials, carriage rides.
+                        </li>
+                        <li class="event">
+                            Dec 10, 2025 — <strong>Economic Development
+                                Workshop</strong><br>
+                            9:00 AM — 12:00 PM — City Hall Annex. Topics: grants, incentives, business growth planning.
+                        </li>
+                        <li class="event">
+                            Weekly — <strong>American Fork Farmers Market
+                                (Seasonal)</strong><br>
+                            Saturdays, 9:00 AM--1:00 PM — Main Street Parking Lot. Fresh produce and artisan goods.
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="current-weather">
+                    <h2>Current Weather</h2>
+
+                    <div class="weather-stats">
+
+                        <div class="weather-icon">
+                            <img src="images/og_image.png" alt="placeholder image showing the company name">
+                        </div>
+                        <div class="weather-numbers">
+                            <p class="temp"></p>
+                            <p class="cloud-status"></p>
+                            <p class="high"></p>
+                            <p class="low"></p>
+                            <p class="humidity"></p>
+                            <p class="sunrise"></p>
+                            <p class="sunset"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="weather-forecast">
+                    <h2>Weather Forecast</h2>
+                    <div class="weather-highs">
+                        <p class="today"></p>
+                        <p class="tomorrow"></p>
+                        <p class="next-day"></p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="company-cards">
+                <section></section>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="chamber-contact-info">
+            <strong class="footer-company-name">American Fork Chamber</strong>
+            <p class="footer-address">123 Main Street, American Fork, UT 84003</p>
+            <p class="footer-email">info@afchamber.org</p>
+            <p class="footer-phone">(801) 421-9582</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube-logo.svg" alt="YouTube">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-logo.svg" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="bennion-info">
+            <p>WDD231 Class Project</p>
+            <p class="copyright">
+                Daniel Bennion
+            </p>
+            <div class="copyright-wrapper">
+                <p class="copyright-year">©<span id="current-year"></span> American Fork Chamber of Commerce</p>
+                <!-- <span class="dot-separator">&#x2022;</span> -->
+                <!-- <span class="dot-separator">&#x2022;</span> -->
+                <p class="last-modified">
+                    Last modified: <span id="lastModified" class="last-modified-date"></span>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

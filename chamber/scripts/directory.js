@@ -1,14 +1,29 @@
+import fetchandRenderMembers from "./fetch-members.js";
+
 const dataUrl = 'data/members.json'
 
 let companiesData = [];
 let currentView = 'grid';
-const viewContainer = document.querySelector(".view")
+
+let viewContainer = null;
+
+// try {
+//     companiesData = await fetchandRenderMembers(dataUrl)
+//     renderMembers()
+// } catch (err) {
+//     console.log(err);
+// }
+
 
 
 async function renderMembers() {
+    viewContainer = document.querySelector('.view');
+
 
     if (!viewContainer) return;
     viewContainer.innerHTML = '';
+
+    viewContainer = document.querySelector(".view")
 
 
     if (currentView === 'grid') {
@@ -105,26 +120,22 @@ async function renderMembers() {
 
 }
 
-async function fetchandRenderMembers() {
-    try {
-        const res = await fetch(dataUrl);
-        if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
-        const json = await res.json();
-        companiesData = json.companies || json;
-        renderMembers();
-    } catch (err) {
-        console.error(err);
-        if (viewContainer) viewContainer.innerHTML = 'Unable to load members.';
-    }
-}
 
 
 // Display grid view
 
-document.addEventListener('DOMContentLoaded', () => {
-    const viewButtons = document.querySelector(".view-buttons")
-    // if (!viewButtons) return;
+document.addEventListener('DOMContentLoaded', async () => {
 
+    try {
+        companiesData = await fetchandRenderMembers(dataUrl);
+    } catch (err) {
+        console.error(err);
+        companiesData = [];
+    }
+
+    renderMembers();
+
+    const viewButtons = document.querySelector(".view-buttons")
     viewButtons.addEventListener('click', (e) => {
         const btn = e.target.closest('button');
         if (!btn || !viewButtons.contains(btn)) return;
@@ -143,4 +154,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-fetchandRenderMembers()

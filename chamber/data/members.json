@@ -10,11 +10,11 @@
                 "zip": "84003"
             },
             "phone": "(801) 555-0101",
-            "website": "https://www.valleyhardware.example",
+            "website": "https://www.valleyhardware.com",
             "image": "images/valley-hardware.jpg",
             "membershipLevel": 3,
             "category": "Home & Garden",
-            "email": "info@valleyhardware.example",
+            "email": "info@valleyhardware.com",
             "hours": "Mon-Sat 8:00-18:00",
             "description": "Full-service hardware store with tool rental and local delivery."
         },
@@ -28,11 +28,11 @@
                 "zip": "84003"
             },
             "phone": "(801) 555-0123",
-            "website": "https://www.afbakery.example",
+            "website": "https://www.afbakery.com",
             "image": "images/af-bakery.jpg",
             "membershipLevel": 2,
             "category": "Food & Beverage",
-            "email": "hello@afbakery.example",
+            "email": "hello@afbakery.com",
             "hours": "Daily 6:00-16:00",
             "description": "Artisan breads, pastries, and custom cakes made daily."
         },
@@ -46,11 +46,11 @@
                 "zip": "84003"
             },
             "phone": "(801) 555-0145",
-            "website": "https://www.canyondental.example",
+            "website": "https://www.canyondental.com",
             "image": "images/canyon-dental.jpg",
             "membershipLevel": 3,
             "category": "Health & Wellness",
-            "email": "appointments@canyondental.example",
+            "email": "appointments@canyondental.com",
             "hours": "Mon-Fri 9:00-17:00",
             "description": "Family dentistry, emergency visits, and orthodontics."
         },
@@ -64,11 +64,11 @@
                 "zip": "84003"
             },
             "phone": "(801) 555-0167",
-            "website": "https://www.summitrealty.example",
+            "website": "https://www.summitrealty.com",
             "image": "images/summit-realty.jpg",
             "membershipLevel": 1,
             "category": "Real Estate",
-            "email": "agents@summitrealty.example",
+            "email": "agents@summitrealty.com",
             "hours": "Mon-Fri 8:30-17:30",
             "description": "Residential and commercial real estate services."
         },
@@ -82,11 +82,11 @@
                 "zip": "84003"
             },
             "phone": "(801) 555-0189",
-            "website": "https://www.pioneercafe.example",
+            "website": "https://www.pioneercafe.com",
             "image": "images/pioneer-cafe.jpg",
             "membershipLevel": 2,
             "category": "Food & Beverage",
-            "email": "contact@pioneercafe.example",
+            "email": "contact@pioneercafe.com",
             "hours": "Daily 7:00-20:00",
             "description": "Local cafe serving breakfast, lunch, and specialty coffee."
         },
@@ -100,11 +100,11 @@
                 "zip": "84003"
             },
             "phone": "(801) 555-0202",
-            "website": "https://www.lakesideplumbing.example",
+            "website": "https://www.lakesideplumbing.com",
             "image": "images/lakeside-plumbing.jpg",
             "membershipLevel": 1,
             "category": "Trades & Services",
-            "email": "service@lakesideplumbing.example",
+            "email": "service@lakesideplumbing.com",
             "hours": "24/7 emergency service",
             "description": "Residential and commercial plumbing, repairs, and installs."
         },
@@ -118,11 +118,11 @@
                 "zip": "84003"
             },
             "phone": "(801) 555-0224",
-            "website": "https://www.heritagebooks.example",
+            "website": "https://www.heritagebooks.com",
             "image": "images/heritage-bookstore.jpg",
             "membershipLevel": 2,
             "category": "Retail",
-            "email": "books@heritagebooks.example",
+            "email": "books@heritagebooks.com",
             "hours": "Tue-Sat 10:00-18:00",
             "description": "Independent bookstore with events, local authors, and gift items."
         }

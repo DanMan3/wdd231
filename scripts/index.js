@@ -121,7 +121,7 @@ filters.addEventListener('click', (e) => {
 
 
 const myPromise = new Promise((resolve, reject) => {
-    const success = true; // Simulate success or failure
+    const success = true;
     if (success) {
         resolve("Operation was successful!");
     } else {
