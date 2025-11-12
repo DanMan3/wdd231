@@ -1,3 +1,4 @@
+
 const courses = [
     {
         subject: 'CSE',
@@ -81,6 +82,7 @@ const courses = [
 // Filtered courses buttons
 const filters = document.querySelector(".course-filters")
 const coursesList = document.querySelector(".courses-list")
+const courseDetails = document.querySelector("#course-details")
 
 filters.addEventListener('click', (e) => {
     const btn = e.target
@@ -100,8 +102,13 @@ filters.addEventListener('click', (e) => {
     for (const courseObj of filtered) {
         const p = document.createElement("p")
         p.textContent = `${courseObj.completed ? '✔' : ''}${courseObj.subject} ${courseObj.number}`
+        p.addEventListener('click', () => {
+            displayCourseDetails(courseObj);
+        });
         coursesList.appendChild(p)
     }
+
+
 
     // Total course credits
     const numberOfCredits = filtered.reduce((sum, c) => sum + c.credits, 0)
@@ -111,9 +118,8 @@ filters.addEventListener('click', (e) => {
     courseCredits.innerHTML = ''
     courseCredits.textContent += `The total number of credits for courses listed above is ${numberOfCredits}`;
 
+
 })
-
-
 
 
 
@@ -132,4 +138,20 @@ const myPromise = new Promise((resolve, reject) => {
 
 
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
 
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}

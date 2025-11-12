@@ -52,6 +52,40 @@
 
     <main>
 
+        <form method="get" action="submit" class="chamber-application">
+            <h1>Join American Fork Chamber</h1>
+
+            <label>First Name<input type="text" id="fname" name="fname" required placeholder="John"
+                    autocomplete=""></label>
+            <label>Last Name<input type="text" id="lname" name="lname" required placeholder="Smith"
+                    autocomplete=""></label>
+            <label>Organizational Title<input type="text" id="org-title" name="org-title" placeholder="example title"
+                    autocomplete="organization-title"></label>
+            <label>Email<input type="email" id="email" name="email" required autocomplete=""
+                    placeholder="john.smith@example.com"></label>
+            <label>Phone Number<input type="tel" id="phone" name="phone" required placeholder=""
+                    autocomplete=""></label>
+            <label>Organization's name<input type="text" id="org-name" name="org-name" required placeholder=""
+                    autocomplete=""></label>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" value="NP" required>NP</label>
+                <label><input type="radio" name="membership" value="Bronze">Bronze</label>
+                <label><input type="radio" name="membership" value="Silver">Silver</label>
+                <label><input type="radio" name="membership" value="Gold">Gold</label>
+
+            </fieldset>
+            <label> Organization's description<textarea name="description" id="org-description" rows="4"
+                    placeholder="Describe your organization or business"></textarea></label>
+
+            <input type="hidden" name="time-stamp" id="time-stamp">
+
+            <input type="submit" value="Join Chamber">
+
+
+        </form>
+
     </main>
 
     <footer>
