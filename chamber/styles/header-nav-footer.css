@@ -1,0 +1,214 @@
+:root {
+
+    /* Primary / branding */
+    --color-primary: #0B3D91;
+    /* deep blue */
+    --color-primary-contrast: #FFFFFF;
+
+    /* Accent for buttons/icons */
+    --button-color: rgba(228, 162, 39, 0.831);
+    --color-accent: #0fe5c9;
+    /* warm gold */
+    --color-accent-contrast: #102A43;
+
+    /* Surfaces & background */
+    --color-bg: #F7F9FB;
+    /* very light neutral */
+    --color-surface: #FFFFFF;
+    /* card / section background */
+    --color-border: #E6EAF0;
+    /* subtle border */
+
+    /* Text */
+    --color-text: #102A43;
+    /* dark slate for body text */
+    --color-muted: #6B7280;
+    /* secondary/muted text */
+
+    /* Feedback */
+    --color-success: #2ECC71;
+    --color-danger: #E63946;
+
+    /* Card */
+    --card-background-color: rgba(161, 161, 161, 0.506);
+    --card-border-color: rgba(255, 200, 87, 0.18);
+    --card-header-color: #1e65cf;
+    --card-header-text: rgb(45, 45, 45);
+
+    --primary-font: 'Roboto', Arial, sans-serif;
+    --heading-font: 'Oswald', 'Segoe UI', sans-serif;
+
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* -------- Header -------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    position: relative;
+    box-shadow: 0 6px 20px rgba(16, 42, 67, 0.15), 0 2px 6px rgba(16, 42, 67, 0.08);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color-primary-contrast);
+    padding: 10px;
+}
+
+.navigation {
+    text-decoration: none;
+    color: var(--color-primary-contrast);
+    padding-bottom: 10px;
+}
+
+.brand img {
+    width: 100%;
+    max-width: 2rem;
+    padding-top: 8px;
+}
+
+.site-title {
+    font-size: 1.3rem;
+    color: var(--color-primary-contrast);
+}
+
+.business-branding {
+    display: flex;
+    align-items: center;
+}
+
+/* Nav */
+
+.navigation a[aria-current="page"],
+.navigation a.active {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: 600;
+}
+
+.navigation li {
+    background-color: var(--color-primary);
+    color: var(--color-primary-contrast);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    display: none;
+}
+
+
+.navigation.open li {
+    display: block;
+}
+
+.navigation.open {
+    padding: 0;
+    text-align: center;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: var(--primary-text);
+    display: block;
+}
+
+
+.navigation.open li:active {
+    background-color: var(--color-accent);
+}
+
+
+/* Hamburger menu */
+
+.menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    color: var(--color-primary-contrast);
+    margin-right: 8px;
+    width: 40px;
+    height: 36px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.menu-button::before {
+    content: "☰";
+    font-size: 1.5rem;
+    width: 30px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+}
+
+.menu-button.open::before {
+    content: "X";
+    font-size: 1.5rem;
+    width: 30px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    background-color: var(--color-accent);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-primary-contrast);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -6px 18px rgba(16, 42, 67, 0.08);
+
+}
+
+.footer-email {
+    font-style: italic;
+}
+
+.chamber-contact-info,
+.bennion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.social-media {
+    justify-self: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.social-media img {
+    width: 100%;
+    max-width: 3rem;
+}
+
+.last-modified-date {
+    font-style: italic;
+}

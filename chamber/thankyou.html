@@ -12,12 +12,10 @@
         content="Find local businesses and services in American Fork — directory of Chamber members with contact details and hours.">
     <!-- absolute image must be a url -->
     <meta property="og:image" content="https://danman3.github.io/wdd231/chamber/images/og_image.png">
-    <meta property="og:url" content="https://danman3.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://danman3.github.io/wdd231/chamber/join.html">
     <meta name="author" content="Daniel Bennion">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="stylesheet" href="styles/header-nav-footer.css">
     <link rel="stylesheet" href="styles/header-nav-footer-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +25,8 @@
         rel="stylesheet">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/directory.js"></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
 </head>
 
@@ -46,36 +45,15 @@
     <nav>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" aria-current="page">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" aria-current="page">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
 
     <main>
 
-        <div class="page-width">
 
-            <div class="buttons-and-h1">
-                <h1>Business Directory</h1>
-
-                <div class="view-buttons">
-                    <button type="button" class="card-view view-button" aria-pressed="false" aria-label="List view"
-                        data-view="list">
-                        <img src="images/list.svg" alt="list button">
-                    </button>
-                    <button type="button" class="list-view view-button" aria-pressed="false" aria-label="Grid view"
-                        data-view="grid">
-                        <img src="images/grid.svg" alt="grid button">
-                    </button>
-                </div>
-            </div>
-
-            <div class="view">
-
-
-            </div>
-        </div>
     </main>
 
     <footer>
@@ -115,8 +93,6 @@
         </div>
 
     </footer>
-
-
 </body>
 
 </html>

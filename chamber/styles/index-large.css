@@ -2,54 +2,7 @@
 
 
 
-    /* -------- Header ---------- */
 
-    header {
-        box-shadow: none;
-    }
-
-    .business-branding {
-        margin-left: 2.5rem;
-    }
-
-    .brand {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-
-    /* Navigation */
-
-    .navigation {
-        display: flex;
-        background-color: var(--color-primary);
-        justify-content: flex-end;
-        gap: 5px;
-        padding: 0;
-        box-shadow: 0 6px 20px rgba(16, 42, 67, 0.15), 0 2px 6px rgba(16, 42, 67, 0.08);
-
-    }
-
-    .navigation li {
-        display: unset;
-        border: none;
-        padding-top: 0;
-    }
-
-    .navigation li:hover {
-        color: var(--color-accent);
-        text-decoration: underline;
-    }
-
-    .buttons-and-h1 {
-        display: flex;
-        padding-top: 10px;
-    }
-
-    /* Navigation button */
-    .menu-button {
-        display: none;
-    }
 
 
     /* View buttons */
@@ -123,23 +76,7 @@
     }
 
 
-    /* -------- Footer --------*/
 
-    footer {
-        gap: 5rem;
-        margin-top: auto;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .social-media {
-        margin: 0;
-    }
-
-    .bennion-info {
-        align-self: center;
-    }
 
 
 }
