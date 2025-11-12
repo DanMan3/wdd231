@@ -126,15 +126,6 @@ header a {
     display: block;
 }
 
-a,
-button,
-.menu-button,
-.navigation li,
-.navigation li a {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-}
-
 
 .navigation.open li:active {
     background-color: var(--color-accent);
@@ -212,7 +203,7 @@ main {
 }
 
 .list-view,
-.grid-view {
+.card-view {
     background-color: var(--button-color);
     border: none;
     border-radius: 5px;
@@ -220,7 +211,7 @@ main {
 }
 
 .list-view:hover,
-.grid-view:hover {
+.card-view:hover {
     background-color: var(--color-accent);
 }
 

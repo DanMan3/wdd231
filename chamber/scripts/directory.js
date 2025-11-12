@@ -7,14 +7,6 @@ let currentView = 'grid';
 
 let viewContainer = null;
 
-// try {
-//     companiesData = await fetchandRenderMembers(dataUrl)
-//     renderMembers()
-// } catch (err) {
-//     console.log(err);
-// }
-
-
 
 async function renderMembers() {
     viewContainer = document.querySelector('.view');
