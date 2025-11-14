@@ -1,0 +1,41 @@
+#results {
+    background-color: var(--card-background-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: center;
+    min-width: 300px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--card-background-color), rgba(19, 7, 192, 0.02));
+    box-shadow:
+        0 10px 30px rgba(23, 35, 56, 0.10),
+        0 2px 8px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid rgba(0, 0, 0, 0.06);
+    /* subtle accent - swap color if you have a token */
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#results p,
+#results .result-item {
+    margin: 0;
+    color: var(--text-secondary, #333);
+    max-width: 88%;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    #results {
+        min-width: 400px;
+
+    }
+}

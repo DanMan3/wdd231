@@ -17,3 +17,7 @@ h3,
 .footer-company-name {
     font-family: var(--heading-font);
 }
+
+.page-width {
+    background-color: var(--color-bg);
+}

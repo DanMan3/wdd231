@@ -1,1 +1,38 @@
-@media screen and (min-width: 1000px) {}
+@media screen and (min-width: 1000px) {
+
+
+    /* ---------- Main ----------- */
+
+    .page-main {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .membership-info {
+        align-self: center;
+    }
+
+
+
+    input[type="submit"] {
+        background-color: var(--button-color);
+        border: none;
+        border-radius: 20px;
+        min-height: 2.5rem;
+        max-width: 10rem;
+        align-self: flex-end;
+    }
+
+    /* Form */
+
+
+    /* Membership cards */
+
+
+
+    .membership-card {
+        min-width: 400px;
+
+    }
+}

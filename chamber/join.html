@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/header-nav-footer.css">
     <link rel="stylesheet" href="styles/header-nav-footer-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,7 +27,7 @@
         rel="stylesheet">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/join.js" defer></script>
 
 </head>
 
@@ -51,41 +53,66 @@
     </nav>
 
     <main>
+        <div class="page-width">
 
-        <form method="get" action="submit" class="chamber-application">
-            <h1>Join the American Fork Chamber Of Commerce</h1>
+            <div class="page-main">
+                <div class="form-content">
+                    <h1>Join the American Fork Chamber Of Commerce</h1>
 
-            <label>First Name<input type="text" id="fname" name="fname" required placeholder="John"
-                    autocomplete=""></label>
-            <label>Last Name<input type="text" id="lname" name="lname" required placeholder="Smith"
-                    autocomplete=""></label>
-            <label>Organizational Title<input type="text" id="org-title" name="org-title" placeholder="example title"
-                    autocomplete="organization-title"></label>
-            <label>Email<input type="email" id="email" name="email" required autocomplete=""
-                    placeholder="john.smith@example.com"></label>
-            <label>Phone Number<input type="tel" id="phone" name="phone" required placeholder=""
-                    autocomplete=""></label>
-            <label>Organization's name<input type="text" id="org-name" name="org-name" required placeholder=""
-                    autocomplete=""></label>
+                    <form method="get" action="thankyou.html" class="chamber-application">
 
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label><input type="radio" name="membership" value="NP" required>NP</label>
-                <label><input type="radio" name="membership" value="Bronze">Bronze</label>
-                <label><input type="radio" name="membership" value="Silver">Silver</label>
-                <label><input type="radio" name="membership" value="Gold">Gold</label>
+                        <label>First Name*<input type="text" id="first" name="first" required placeholder="John"
+                                autocomplete="given-name" title="Applicant's first name"></label>
 
-            </fieldset>
-            <label> Organization's description<textarea name="description" id="org-description" rows="4"
-                    placeholder="Describe your organization or business"></textarea></label>
+                        <label>Last Name*<input type="text" id="last" name="last" required placeholder="Smith"
+                                autocomplete="family-name" title="Applicant's last name"></label>
 
-            <input type="hidden" name="time-stamp" id="time-stamp">
+                        <label>Organizational Title<input type="text" id="org-title" name="title"
+                                title="Your role or oganizational title" autocomplete="organization-title"
+                                pattern="^[A-Za-z\- ]{7,}$" placeholder="Executive Director"></label>
 
-            <input type="submit" value="Join Chamber">
+                        <label>Email*<input type="email" id="email" name="email" required autocomplete="email"
+                                placeholder="john.smith@example.com"></label>
 
+                        <label>Mobile Phone*<input type="tel" id="phone" name="phone" required
+                                title="Mobile phone number" placeholder="(801) 555-1234"
+                                title="Applicant's email address" autocomplete="phone"></label>
 
-        </form>
+                        <label>Organization's name*<input type="text" id="org-name" name="organization" required
+                                title="Business or organization" placeholder="Acme Co."
+                                autocomplete="organization"></label>
 
+                        <fieldset>
+                            <legend>Membership Level</legend>
+                            <label><input type="radio" name="membership" value="np" required>Non Profit</label>
+                            <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                            <label><input type="radio" name="membership" value="silver">Silver</label>
+                            <label><input type="radio" name="membership" value="gold">Gold</label>
+
+                        </fieldset>
+                        <label> Organization's description<textarea name="description" id="org-description" rows="4"
+                                title="Describe your organization or business"
+                                placeholder="Describe your organization or business"></textarea></label>
+
+                        <input type="hidden" name="time-stamp" id="time-stamp">
+
+                        <input type="submit" value="Join Chamber">
+
+                    </form>
+                </div>
+
+                <div class="membership-info">
+                    <h2>Membership Levels</h2>
+                    <section class="membership-cards"></section>
+                </div>
+            </div>
+            <div class="modals">
+                <dialog id="non-profit-details"></dialog>
+                <dialog id="bronze-details"></dialog>
+                <dialog id="silver-details"></dialog>
+                <dialog id="gold-details"></dialog>
+            </div>
+        </div>
     </main>
 
     <footer>
