@@ -1,0 +1,24 @@
+@media screen and (min-width: 641px) {
+
+    .discover-card {
+        grid-template-areas:
+            "photo name"
+            "photo description"
+            "photo address"
+            "photo button";
+    }
+
+    .discover-card img {
+        width: 300px;
+    }
+
+    .discover-card img:hover {
+        rotate: 0.01turn;
+
+    }
+
+    .discover-card button {
+        grid-area: button;
+    }
+
+}

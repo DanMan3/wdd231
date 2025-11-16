@@ -1,0 +1,13 @@
+@media screen and (min-width: 1025px) {
+
+
+    .discover-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .discover-card img:hover {
+        rotate: 0.01turn;
+    }
+
+}
