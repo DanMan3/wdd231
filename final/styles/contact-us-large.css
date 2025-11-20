@@ -1,0 +1,12 @@
+@media screen and (min-width: 1024px) {
+
+    /* --------Main------- */
+
+    /* Form */
+
+    #send-message {
+        max-width: 12rem;
+        margin-left: auto;
+
+    }
+}

@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Wasatch Tracker</title>
-    <meta name="description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
-    <meta property="og:title" content="Wasatch Tracker — Home">
-    <meta property="og:description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
+    <title>Contact Us | Wasatch Tracker</title>
+    <meta name="description"
+        content="Wasatch Tracker — Have a feature request, concern, or problem? Send us a message!">
+    <meta property="og:title" content="Wasatch Tracker — Contact Us">
+    <meta property="og:description"
+        content="Wasatch Tracker — Have a feature request, concern, or problem? Send us a message!">
     <!-- absolute image must be a url -->
     <meta property="og:image" content="https://danman3.github.io/wdd231/chamber/images/og_image.png">
     <meta property="og:url" content="https://danman3.github.io/wdd231/chamber/index.html">
     <meta name="author" content="Daniel Bennion">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/index-medium.css">
-    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/contact-us.css">
+    <link rel="stylesheet" href="styles/contact-us-large.css">
     <link rel="stylesheet" href="styles/header-nav-footer.css">
     <link rel="stylesheet" href="styles/header-nav-footer-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
         rel="stylesheet">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/cards.js"></script>
+    <script src="scripts/contact-us.js" defer></script>
 
 </head>
 
@@ -34,7 +35,7 @@
 <body>
     <header>
         <div class="business-branding">
-            <div class="branding">
+            <div>
                 <span class="site-title">Wasatch Tracker</span>
                 <a class="brand" href="index.html">
                     <img src="images/logo.svg" alt="Wasatch Tracker">
@@ -49,41 +50,59 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="tracker.html">Tracker</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="contact-us.html" aria-current="page">Contact Us</a></li>
             </ul>
         </nav>
     </div>
 
 
-
     <main>
 
-        <div id="page-width">
-            <div class="hero">
-                <picture>
-                    <source srcset="images/hero.webp" type="image/webp">
-                    <img src="images/hero.webp" alt="Top of a ski trail at Park City Resort" class="hero-image"
-                        loading="lazy" width="1600" height="900">
-                </picture>
+        <div class="page-width">
+
+            <div class="form-content">
+                <h1>Send Us a Message</h1>
+                <p>Have a feature request, concern, or problem? Send us a message!</p>
+
+                <form method="get" action="thankyou.html" class="contact-us-form">
+
+                    <label>First Name*<input type="text" id="first" name="first" required placeholder="John"
+                            autocomplete="given-name" title="Applicant's first name"></label>
+
+                    <label>Last Name*<input type="text" id="last" name="last" required placeholder="Smith"
+                            autocomplete="family-name" title="Applicant's last name"></label>
+
+                    <label>Email*<input type="email" id="email" name="email" title="Applicant's email address" required
+                            autocomplete="email" placeholder="john.smith@example.com"></label>
+
+                    <label>Mobile Phone*<input type="tel" id="phone" name="phone" required title="Mobile phone number"
+                            placeholder="(801) 555-1234" autocomplete="tel"></label>
+
+                    <fieldset>
+                        <legend>What is the nature of your inquiry?</legend>
+                        <label><input type="radio" name="membership" value="Bug/Website Problem" required>Bug/Website
+                            Problem</label>
+                        <label><input type="radio" name="membership" value="Feature Request">Feature Request</label>
+                        <label><input type="radio" name="membership" value="Incorrect Data">Incorrect Data</label>
+                        <label><input type="radio" name="membership" value="Business Inquiry">Business Inquiry</label>
+                    </fieldset>
+
+                    <label> Comment*<textarea name="comment" id="comment" rows="4" title="Describe your inquiry"
+                            placeholder="Describe your inquiry" required></textarea></label>
+
+                    <input type="hidden" name="time-stamp" id="time-stamp">
+
+                    <input type="submit" value="Send Message" id="send-message">
+
+                </form>
             </div>
 
-            <div class="utah-ski-resorts-info">
-                <h1>Utah Ski Resorts</h1>
-                <p class="utah-ski-resorts-description">Having 15 ski resorts, Utah is a wonderful state for skiers and
-                    snowboarders alike. It boasts a large
-                    variety of locations across the Wasatch Mountains, from as far north as Logan, UT, all the way down
-                    to
-                    Cedar City, UT.</p>
-            </div>
-
-            <div class="cards"></div>
-
-            <div class="modals"></div>
         </div>
 
     </main>
+
 
     <footer>
 

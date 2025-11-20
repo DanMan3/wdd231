@@ -82,7 +82,7 @@ header a {
 
 .navigation a[aria-current="page"],
 .navigation a.active {
-    color: var(--color-accent);
+    color: var(--highlight-color);
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;

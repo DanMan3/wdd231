@@ -9,12 +9,17 @@
     }
 
     .business-branding {
-        margin-left: 2.5rem;
+        margin-left: 5rem;
     }
 
     .brand {
         padding-top: 0;
         padding-bottom: 0;
+    }
+
+    .branding {
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -28,6 +33,10 @@
         padding: 0;
     }
 
+    #nav-large {
+        margin-right: 10rem;
+    }
+
     .navigation li {
         display: unset;
         border: none;
@@ -37,6 +46,10 @@
     .navigation li:hover {
         color: var(--highlight-color);
         text-decoration: underline;
+    }
+
+    .navigation li:hover a {
+        color: var(--highlight-color);
     }
 
     .buttons-and-h1 {

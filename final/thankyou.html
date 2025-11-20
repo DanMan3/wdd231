@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasatch Tracker — Home</title>
-    <meta name="description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
-    <meta property="og:title" content="Wasatch Tracker — Home">
-    <meta property="og:description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
+    <title>Thank You | Wasatch Tracker</title>
+    <meta name="description" content="Thank You! Your comment has been recorded!">
+    <meta property="og:title" content="Thank You | Wasatch Tracker">
+    <meta property="og:description" content="Thank You! Your comment has been recorded!">
     <!-- absolute image must be a url -->
     <meta property="og:image" content="https://danman3.github.io/wdd231/chamber/images/og_image.png">
     <meta property="og:url" content="https://danman3.github.io/wdd231/chamber/index.html">
     <meta name="author" content="Daniel Bennion">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="stylesheet" href="styles/header-nav-footer.css">
     <link rel="stylesheet" href="styles/header-nav-footer-large.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,21 +24,20 @@
         rel="stylesheet">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script type="module" src="scripts/weather.js"></script> -->
-    <!-- <script type="module" src="scripts/index.js"></script> -->
-
+    <script src="scripts/thank-you.js" defer></script>
 
 </head>
-
 
 
 <body>
     <header>
         <div class="business-branding">
-            <a class="brand" href="index.html">
-                <img src="images/business-logo.svg" alt="Wasatch Tracker">
-            </a>
-            <span class="site-title">Wasatch Tracker</span>
+            <div>
+                <span class="site-title">Wasatch Tracker</span>
+                <a class="brand" href="index.html">
+                    <img src="images/logo.svg" alt="Wasatch Tracker">
+                </a>
+            </div>
         </div>
 
         <button class="menu-button" aria-label="Toggle navigation menu"></button>
@@ -49,18 +47,20 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="tracker.html">Tracker</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="contact-us.html" aria-current="page">Contact Us</a></li>
             </ul>
         </nav>
     </div>
 
-
-
     <main>
 
         <div class="page-width">
+
+            <h1>Thank You! Your response has been recorded.</h1>
+            <div class="thankyou-card"></div>
+            <button onclick="window.location.href='contact-us.html'" class="return-button">Return To Form</button>
 
         </div>
 
@@ -70,7 +70,7 @@
 
         <div class="chamber-contact-info">
             <strong class="footer-company-name">Wasatch Tracker</strong>
-            <p class="footer-address">123 Main Street, Springville, UT 84003</p>
+            <p class="footer-address">123 Main Street, Springville, UT 84113</p>
             <p class="footer-email">info@wasatchtracker.com</p>
             <p class="footer-phone">(801) 421-9582</p>
         </div>
