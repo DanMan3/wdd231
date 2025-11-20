@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 160" aria-hidden="true" focusable="false">
+  <style><![CDATA[
+    .mount { fill:#ffffff; }
+    .cap   { fill:rgba(255,255,255,0.95); }
+  ]]></style>
+
+  <!-- Left peak -->
+  <path class="mount" d="M0 150 L80 30 L160 150 Z"/>
+  <path class="cap" d="M80 30 L96 56 L88 60 L108 96 L80 48 Z"/>
+
+  <!-- Center (highest) peak -->
+  <path class="mount" d="M120 150 L220 6 L320 150 Z"/>
+  <path class="cap" d="M220 6 L242 40 L232 44 L256 92 L220 36 Z"/>
+
+  <!-- Right peak -->
+  <path class="mount" d="M280 150 L360 50 L440 150 Z"/>
+  <path class="cap" d="M360 50 L376 74 L368 78 L388 108 L360 80 Z"/>
+</svg>

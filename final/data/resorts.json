@@ -1,0 +1,114 @@
+{
+    "resorts": [
+        {
+            "name": "brighton",
+            "image": "images/brighton.webp",
+            "about": "Brighton is a friendly, mountain-focused resort in Big Cottonwood Canyon near Salt Lake City. It's prized for reliable snowfall, varied terrain for beginners through experts, lively terrain parks, short lift lines, and a long season—ideal for powder seekers and park riders alike.",
+            "stats": {
+                "snowfall": "400 in.",
+                "acreage": "1,050 acres",
+                "lift-ticket": "$109 midweek / $139 weekend",
+                "season-pass": "$849 Ikon Base"
+            }
+        },
+        {
+            "name": "nordic-valley",
+            "image": "images/nordic-valley.webp",
+            "about": "Nordic Valley is a small, family-oriented resort near Ogden known for affordable lift tickets, excellent beginner terrain, and extensive night skiing. It's a great place to learn and build confidence without large crowds.",
+            "stats": {
+                "snowfall": "320 in.",
+                "acreage": "200 acres",
+                "lift-ticket": "$69 midweek / $89 weekend",
+                "season-pass": "$299 Nordic Valley Pass"
+            }
+        },
+        {
+            "name": "powder-mountain",
+            "image": "images/powder-mountain.webp",
+            "about": "Powder Mountain offers massive skiable acreage and a low-lift-density experience. Renowned for tree skiing, open bowls, and a laid-back vibe, it’s ideal for riders who prioritize fresh snow and uncrowded terrain.",
+            "stats": {
+                "snowfall": "500 in.",
+                "acreage": "8,464 acres",
+                "lift-ticket": "$129 midweek / $149 weekend",
+                "season-pass": "$899 Powder Pass"
+            }
+        },
+        {
+            "name": "sundance",
+            "image": "images/sundance.webp",
+            "about": "Sundance Resort blends art, nature, and skiing on a scenic mountain founded by Robert Redford. It features varied terrain, intimate slope-side lodging, and a quieter, more boutique mountain experience with access to Nordic and backcountry routes.",
+            "stats": {
+                "snowfall": "460 in.",
+                "acreage": "450 acres",
+                "lift-ticket": "$119 day ticket",
+                "season-pass": "$659 Sundance Pass"
+            }
+        },
+        {
+            "name": "alta",
+            "image": "images/alta.webp",
+            "about": "Alta is a legendary, skier-only mountain in Little Cottonwood Canyon known for extraordinary snowfall and steep, technical terrain. It's a powder-lover's paradise with a traditional, no-frills ski culture and excellent advanced lines.",
+            "stats": {
+                "snowfall": "550 in.",
+                "acreage": "2,200 acres",
+                "lift-ticket": "$159 standard",
+                "season-pass": "$1,299 AltaPass"
+            }
+        },
+        {
+            "name": "snowbird",
+            "image": "images/snowbird.webp",
+            "about": "Snowbird sits adjacent to Alta and is famous for big snow, long verticals, and challenging terrain accessed by a high-capacity tram. It offers sustained steep runs, advanced terrain, and a season that often extends deep into spring.",
+            "stats": {
+                "snowfall": "500 in.",
+                "acreage": "2,500 acres",
+                "lift-ticket": "$179 full-day",
+                "season-pass": "$999 Ikon Base + California"
+            }
+        },
+        {
+            "name": "solitude",
+            "image": "images/solitude.webp",
+            "about": "Solitude Mountain Resort delivers a quieter, family-friendly experience with a balanced mix of groomers, bowls, and gladed tree skiing. Less crowded than neighboring resorts, it’s popular with families and riders who want varied terrain in a relaxed setting.",
+            "stats": {
+                "snowfall": "500 in.",
+                "acreage": "1,200 acres",
+                "lift-ticket": "$119 midweek / $139 weekend",
+                "season-pass": "$899 Solitude Pass"
+            }
+        },
+        {
+            "name": "deer-valley",
+            "image": "images/deer-valley.webp",
+            "about": "Deer Valley is an upscale, skier-only resort renowned for impeccably groomed runs, top-tier guest services, and limited lift capacity to preserve experience quality. It’s ideal for visitors who value comfort, dining, and consistent slope conditions.",
+            "stats": {
+                "snowfall": "300 in.",
+                "acreage": "2,000 acres",
+                "lift-ticket": "$199 standard",
+                "season-pass": "$1,749 Deer Valley Pass"
+            }
+        },
+        {
+            "name": "brian-head",
+            "image": "images/brian-head.webp",
+            "about": "Brian Head is a high-elevation southern Utah resort offering family-friendly terrain, affordable lift tickets, and plenty of beginner and intermediate runs. Its location and elevation make it a convenient choice for varied conditions and night skiing.",
+            "stats": {
+                "snowfall": "320 in.",
+                "acreage": "650 acres",
+                "lift-ticket": "$69 midweek / $89 weekend",
+                "season-pass": "$299 Brian Head Pass"
+            }
+        },
+        {
+            "name": "park-city",
+            "image": "images/park-city.webp",
+            "about": "Park City Mountain is one of North America’s largest resorts with extensive terrain, modern lift infrastructure, and strong town amenities. It suits all ability levels and hosts a lively après-ski scene, year-round events, and excellent access from Salt Lake City.",
+            "stats": {
+                "snowfall": "355 in.",
+                "acreage": "7,300 acres",
+                "lift-ticket": "$179 standard",
+                "season-pass": "$1,599 Ikon Base"
+            }
+        }
+    ]
+}

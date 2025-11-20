@@ -1,0 +1,218 @@
+:root {
+
+    --primary-color: #6b2d6c;
+    --primary-color-text: #ffffff;
+    --secondary-color-text: #212529;
+    --card-header-text: #00263e;
+
+    --highlight-color: #f7b500;
+    --button-color: #d11260;
+    --button-text-color: #ffffff;
+
+    --card-background-color: rgba(26, 192, 187, 0.229);
+    --card-border-color: #d9b0ff;
+
+    --primary-font: 'Roboto', Arial, sans-serif;
+    --heading-font: 'Oswald', 'Segoe UI', sans-serif;
+
+}
+
+
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color-text);
+}
+
+
+
+/* -------- Header -------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: relative;
+    box-shadow: 0 6px 20px rgba(16, 42, 67, 0.15), 0 2px 6px rgba(16, 42, 67, 0.08);
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color-text);
+    padding: 10px;
+}
+
+.navigation {
+    text-decoration: none;
+    color: var(--primary-color-text);
+}
+
+.brand img {
+    width: 100%;
+    max-width: 5rem;
+    margin-left: 10px;
+}
+
+.site-title {
+    font-size: 1.3rem;
+    color: var(--primary-color-text);
+}
+
+.business-branding {
+    display: flex;
+    align-items: center;
+    margin-left: 1.3rem;
+}
+
+/* Nav */
+
+.navigation a[aria-current="page"],
+.navigation a.active {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    font-weight: 600;
+}
+
+.navigation li {
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    display: none;
+}
+
+
+.navigation.open li {
+    display: block;
+}
+
+.navigation.open {
+    padding: 0;
+    text-align: center;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: var(--primary-color-text);
+    display: block;
+}
+
+
+.navigation.open li:active {
+    background-color: var(--highlight-color);
+}
+
+
+/* Hamburger menu */
+
+.menu-button {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    color: var(--button-text-color);
+    margin-right: 8px;
+    margin-left: auto;
+    width: 40px;
+    height: 36px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.menu-button::before {
+    content: "☰";
+    font-size: 1.5rem;
+    width: 30px;
+    height: 27px;
+    display: inline-flex;
+    text-align: center;
+    line-height: 27px;
+    margin-left: auto;
+}
+
+.menu-button.open::before {
+    content: "X";
+    font-size: 1.5rem;
+    width: 30px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    background-color: var(--highlight-color);
+}
+
+.menu-button {
+    /* removes mobile tap highlight */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* main */
+main {
+    margin: auto;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--primary-color-text);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -6px 18px rgba(16, 42, 67, 0.08);
+
+}
+
+.footer-email {
+    font-style: italic;
+}
+
+.chamber-contact-info,
+.bennion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.social-media {
+    justify-self: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.social-media img {
+    width: 100%;
+    max-width: 3rem;
+}
+
+.last-modified-date {
+    font-style: italic;
+}

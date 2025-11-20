@@ -1,0 +1,12 @@
+@media screen and (min-width: 641px) {
+
+    .card {
+        grid-template-areas:
+            "photo name"
+            "photo description";
+    }
+
+    .card img {
+        width: 300px;
+    }
+}

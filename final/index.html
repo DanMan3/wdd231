@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasatch Tracker — Home</title>
+    <meta name="description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
+    <meta property="og:title" content="Wasatch Tracker — Home">
+    <meta property="og:description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
+    <!-- absolute image must be a url -->
+    <meta property="og:image" content="https://danman3.github.io/wdd231/chamber/images/og_image.png">
+    <meta property="og:url" content="https://danman3.github.io/wdd231/chamber/index.html">
+    <meta name="author" content="Daniel Bennion">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-medium.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/header-nav-footer.css">
+    <link rel="stylesheet" href="styles/header-nav-footer-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/cards.js"></script>
+    <!-- <script type="module" src="scripts/weather.js"></script> -->
+    <!-- <script type="module" src="scripts/index.js"></script> -->
+
+
+</head>
+
+
+<body>
+    <header>
+        <div class="business-branding">
+            <div>
+                <span class="site-title">Wasatch Tracker</span>
+                <a class="brand" href="index.html">
+                    <img src="images/logo.svg" alt="Wasatch Tracker">
+                </a>
+            </div>
+        </div>
+
+        <button class="menu-button" aria-label="Toggle navigation menu"></button>
+        <div id="nav-large"></div>
+    </header>
+    <div id="nav-small">
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="resorts.html">Contact Us</a></li>
+                <!-- <li><a href="discover.html">Discover</a></li> -->
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <main>
+
+        <div id="page-width">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero.webp" type="image/webp">
+                    <img src="images/hero.webp" alt="Top of a ski trail at Park City Resort" class="hero-image"
+                        loading="lazy" width="1600" height="900">
+                </picture>
+            </div>
+
+            <div class="utah-ski-resorts-info">
+                <h1>Utah Ski Resorts</h1>
+                <p class="utah-ski-resorts-description">Having 15 ski resorts, Utah is a wonderful state for skiers and
+                    snowboarders alike. It boasts a large
+                    variety of locations across the Wasatch Mountains, from as far north as Logan, UT, all the way down
+                    to
+                    Cedar City, UT.</p>
+            </div>
+
+            <div class="cards"></div>
+
+            <div class="modals"></div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="chamber-contact-info">
+            <strong class="footer-company-name">Wasatch Tracker</strong>
+            <p class="footer-address">123 Main Street, Springville, UT 84113</p>
+            <p class="footer-email">info@wasatchtracker.com</p>
+            <p class="footer-phone">(801) 421-9582</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube-logo.svg" alt="YouTube">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-logo.svg" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="bennion-info">
+            <p>WDD231 Class Project</p>
+            <p class="copyright">
+                Daniel Bennion
+            </p>
+            <div class="copyright-wrapper">
+                <p class="copyright-year">©<span id="current-year"></span> Wasatch Tracker</p>
+                <!-- <span class="dot-separator">&#x2022;</span> -->
+                <!-- <span class="dot-separator">&#x2022;</span> -->
+                <p class="last-modified">
+                    Last modified: <span id="lastModified" class="last-modified-date"></span>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
