@@ -1,0 +1,35 @@
+[33m10027f2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~2
+[33mc7ebff0[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: reset: moving to HEAD~1
+[33m9aae7bb[m HEAD@{2}: commit: Remove broken submodule EasyScreenCast
+[33mc7ebff0[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{3}: commit: Attributions page styled. Video demonstration and attributions links added to footer
+[33m18251e2[m HEAD@{4}: commit: Tracker page added. Favicon and og_image added. images optimized.
+[33m10027f2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{5}: commit: Contact Us page and Thank You page added
+[33mc3d2f8a[m HEAD@{6}: commit: Wasatch Tracker project files added. Home page added.
+[33m6048f42[m HEAD@{7}: commit: Chamber discover page added
+[33m0b3451d[m HEAD@{8}: reset: moving to HEAD~1
+[33m7247b0a[m HEAD@{9}: commit: Chamber discover page added
+[33m0b3451d[m HEAD@{10}: commit: Chamber join page completed
+[33m6b55b31[m HEAD@{11}: reset: moving to HEAD~1
+[33mbb70853[m HEAD@{12}: commit: Chamber join page completed
+[33m6b55b31[m HEAD@{13}: reset: moving to HEAD~1
+[33m423db76[m HEAD@{14}: commit: Chamber join page completed
+[33m6b55b31[m HEAD@{15}: commit: Chamber join page completed
+[33m3133aa4[m HEAD@{16}: reset: moving to HEAD~1
+[33me5babb9[m HEAD@{17}: commit: Chamber join page completed
+[33m3133aa4[m HEAD@{18}: commit: Home page hero image fixed. Chamber join page started
+[33m03147c0[m HEAD@{19}: commit: html modal advanced html forms w04 application activities added
+[33m22ee694[m HEAD@{20}: commit: Chamber directory page svg converted to files. grid-view renamed to card-view in directory.html
+[33me309740[m HEAD@{21}: reset: moving to HEAD~1
+[33m92c317c[m HEAD@{22}: commit: Chamber directory page svg converted to files. grid-view renamed to card-view in directory.html
+[33me309740[m HEAD@{23}: reset: moving to HEAD~1
+[33m94b651f[m HEAD@{24}: commit: Chamber directory page svg converted to files. grid-view renamed to card-view in directory.html
+[33me309740[m HEAD@{25}: commit: Chamber of Commerce Home page added. Tweaks made to Discover page. Modular JS implimented.
+[33m7a9104c[m HEAD@{26}: reset: moving to HEAD~1
+[33mfe981e6[m HEAD@{27}: commit: Chamber of Commerce Home page added. Tweaks made to Discover page. Modular JS implimented.
+[33m7a9104c[m HEAD@{28}: reset: moving to HEAD~1
+[33mefad1c3[m HEAD@{29}: commit: Chamber of Commerce Home page added. Tweaks made to Discover page. Modular JS implimented.
+[33m7a9104c[m HEAD@{30}: reset: moving to HEAD~1
+[33m2ff5180[m HEAD@{31}: commit: Chamber of Commerce Home page added. Tweaks made to Discover page. Modular JS implimented.
+[33m7a9104c[m HEAD@{32}: reset: moving to HEAD~1
+[33m373259f[m HEAD@{33}: commit: Chamber of Commerce Home page added. Tweaks made to Discover page. Modular JS implimented.
+[33m7a9104c[m HEAD@{34}: reset: moving to HEAD~1
