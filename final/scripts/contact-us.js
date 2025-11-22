@@ -1,51 +1,48 @@
-
 // Punch time stamp on submit form 
 document.addEventListener('DOMContentLoaded', () => {
     const tsInput = document.getElementById('time-stamp');
-    tsInput.value = new Date().toISOString();
+    if (tsInput) {
+        tsInput.value = new Date().toISOString();
+    }
 
-    params = loadInquiriesFromLocalStorage();
-    const inquiries = document.querySelector('.inquiries')
+    const inquiriesContainer = document.querySelector('.inquiries');
+    if (!inquiriesContainer) return;
 
-    for (item of params) {
-        const formattedTime = new Date(item.timeStamp).toLocaleString(undefined, {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "numeric",
-            minute: "2-digit"
+    const params = loadInquiriesFromLocalStorage();
+    if (!params.length) return;
+
+    for (const item of params) {
+        const formattedTime = new Date(item.timeStamp ?? Date.now()).toLocaleString(undefined, {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit'
         });
-        const inquiry = document.createElement('div')
-        inquiry.className = "inquiry"
+
+        const inquiry = document.createElement('div');
+        inquiry.className = 'inquiry';
         inquiry.innerHTML = `
-       <p id="name">Name: <b>${item.first} ${item.last}</b></p>
-        <p id="email">Email: <b>${item.email}</b></p>
-        <p id="phone">Phone: <b>${item.phone}</b></p>
-        <p id="inquiry">Inquiry: ${item.membership}</p>
-        <p id="comments">Comments: <span class=comments>"${item.comment}</span>"</p>
-        <p id="time-stamp"><i>${formattedTime}</i></p>
+            <p class="name">Name: <b>${item.first ?? ''} ${item.last ?? ''}</b></p>
+            <p class="email">Email: <b>${item.email ?? ''}</b></p>
+            <p class="phone">Phone: <b>${item.phone ?? ''}</b></p>
+            <p class="membership">Inquiry: ${item.membership ?? ''}</p>
+            <p class="comments">Comments: <span class="comment">&ldquo;${item.comment ?? ''}&rdquo;</span></p>
+            <p class="time-stamp"><i>${formattedTime}</i></p>
         `;
-
-        inquiries.appendChild(inquiry)
-
-        const page = document.querySelector('.page-width')
-        page.appendChild(inquiries)
+        inquiriesContainer.appendChild(inquiry);
     }
 });
 
 function loadInquiriesFromLocalStorage() {
     try {
-        const jsonRaw = localStorage.getItem('inquiries')
-
-        if (jsonRaw) {
-            const data = JSON.parse(jsonRaw);
-
-            return data;
-        } else {
-            return
-        }
+        const jsonRaw = localStorage.getItem('inquiries');
+        if (!jsonRaw) return [];
+        const parsed = JSON.parse(jsonRaw);
+        return Array.isArray(parsed) ? parsed : [];
     } catch (error) {
-        console.error(`Error returning inquiries from local storage`, error)
+        console.error('Error returning inquiries from local storage', error);
+        return [];
     }
 }
 
