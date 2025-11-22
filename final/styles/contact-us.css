@@ -127,7 +127,7 @@ h2 {
     padding: 10px;
     margin: auto;
     text-align: center;
-    width: 400px;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
     gap: 10px;

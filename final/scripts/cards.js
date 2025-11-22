@@ -1,11 +1,19 @@
-import { resorts } from "../data/resorts.mjs"
-
 
 const cards = document.querySelector(".cards")
-resorts.forEach((card, i) => {
-    const constructedCard = constructCard(card, i);
-    cards.appendChild(constructedCard);
-});
+try {
+    fetch("/final/data/resorts.json").then(response => response.json()).then(resorts => {
+        resorts.forEach((card, i) => {
+            try {
+                const constructedCard = constructCard(card, i);
+                cards.appendChild(constructedCard);
+            } catch (error) {
+                console.error(`Error constructing card for ${card.name}`, error)
+            }
+        });
+    })
+} catch (error) {
+    console.error(`error fetching json data`, error)
+}
 
 
 
@@ -46,13 +54,22 @@ function constructCard(card, i) {
     })
 
     return constructedCard
-
 }
 
 
 function displayModal(dialogElement, card) {
 
-    const prices = card.prices;
+    var prices;
+    try {
+        var prices = card.prices;
+        if (!prices) {
+            throw new Error("Prices data missing for modal.")
+        }
+    } catch (error) {
+        console.error(`Error displaying modal for ${card.name}`, error)
+        dialogElement.innerHTML = "<p>Error loading modal content.</p>";
+        dialogElement.showModal();
+    }
 
     dialogElement.innerHTML = `<button id="close" aria-label="close">❌</button>
       <h3>${card.name}</h3>

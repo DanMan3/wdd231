@@ -10,7 +10,7 @@ menuButton.addEventListener("click", () => {
 })
 
 
-// Nav is in header if in "large" mode, otherwise Nav is below header
+// Nav is in header if it's in "large" mode, otherwise Nav is below header
 const navContainer = document.querySelector("nav");
 const navLargeSlot = document.getElementById("nav-large");
 const navSmallSlot = document.getElementById("nav-small");

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tsInput = document.getElementById('time-stamp');
     tsInput.value = new Date().toISOString();
 
-    params = loadInqueriesFromLocalStorage();
+    params = loadInquiriesFromLocalStorage();
     const inquiries = document.querySelector('.inquiries')
 
     for (item of params) {
@@ -33,16 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-function loadInqueriesFromLocalStorage() {
-    const jsonRaw = localStorage.getItem('inquiries')
-    console.log(jsonRaw)
+function loadInquiriesFromLocalStorage() {
+    try {
+        const jsonRaw = localStorage.getItem('inquiries')
 
-    if (jsonRaw) {
-        const data = JSON.parse(jsonRaw);
+        if (jsonRaw) {
+            const data = JSON.parse(jsonRaw);
 
-        return data;
-    } else {
-        return
+            return data;
+        } else {
+            return
+        }
+    } catch (error) {
+        console.error(`Error returning inquiries from local storage`, error)
     }
 }
 

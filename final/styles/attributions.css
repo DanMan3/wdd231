@@ -1,0 +1,14 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-width {
+    max-width: 840px;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
