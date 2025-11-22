@@ -27,7 +27,7 @@
 
     .navigation {
         display: flex;
-        background-color: var(--primary-color);
+        /* background-color: var(--header-footer-color); */
         justify-content: flex-end;
         gap: 5px;
         padding: 0;
@@ -40,16 +40,19 @@
     .navigation li {
         display: unset;
         border: none;
+        background: inherit;
     }
 
 
     .navigation li:hover {
-        color: var(--highlight-color);
+        color: rgb(199, 255, 248);
+        ;
         text-decoration: underline;
     }
 
     .navigation li:hover a {
-        color: var(--highlight-color);
+        color: rgb(199, 255, 248);
+        ;
     }
 
     .buttons-and-h1 {

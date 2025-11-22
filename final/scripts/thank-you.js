@@ -25,10 +25,32 @@ function getUserData(params) {
     <p id="time-stamp"><i>${timeStamp}</i></p>
     `;
 
-
+    saveInqueryToLocalStorage(params, timeStamp)
 
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     getUserData(params);
 });
+
+
+function saveInqueryToLocalStorage(params, date) {
+    // Convert URLSearchParams to an object
+    const data = {
+        date: date,
+        first: params.get("first"),
+        last: params.get("last"),
+        email: params.get("email"),
+        phone: params.get("phone"),
+        membership: params.get("membership"),
+        comment: params.get("comment"),
+        timeStamp: params.get("time-stamp")
+    };
+
+    const existingData = JSON.parse(localStorage.getItem('inquiries')) || [];
+    existingData.push(data);
+
+
+
+    localStorage.setItem('inquiries', JSON.stringify(existingData));
+}

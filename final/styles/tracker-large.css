@@ -1,0 +1,15 @@
+@media screen and (min-width: 1024px) {
+    .page-width {
+        max-width: 1024px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .seven-day-forecast .forecast-days {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .conditions-div {
+        gap: 2rem;
+    }
+}

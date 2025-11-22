@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" aria-hidden="true" focusable="false">
+  <style><![CDATA[
+    .mount { fill:#ffffff; }
+    .cap   { fill:rgba(255,255,255,0.95); }
+    /* Optional: Add a background if needed */
+    rect { fill: #596fd1; } /* Matches your header gradient start color */
+  ]]></style>
+
+  <!-- Background rectangle for 1600x900 -->
+  <rect width="1600" height="900" />
+
+  <!-- Scaled and centered logo (scale factor ~3.636 to fit width, centered vertically) -->
+  <!-- Left peak -->
+  <path class="mount" d="M0 545 L291 109 L582 545 Z" transform="translate(0, 159.5)"/>
+  <path class="cap" d="M291 109 L351 204 L318 218 L393 352 L291 175 Z" transform="translate(0, 159.5)"/>
+
+  <!-- Center (highest) peak -->
+  <path class="mount" d="M436 545 L800 22 L1164 545 Z" transform="translate(0, 159.5)"/>
+  <path class="cap" d="M800 22 L879 146 L836 160 L931 334 L800 131 Z" transform="translate(0, 159.5)"/>
+
+  <!-- Right peak -->
+  <path class="mount" d="M1018 545 L1310 182 L1600 545 Z" transform="translate(0, 159.5)"/>
+  <path class="cap" d="M1310 182 L1370 267 L1342 281 L1422 394 L1310 291 Z" transform="translate(0, 159.5)"/>
+</svg>

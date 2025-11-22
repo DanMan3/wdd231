@@ -1,0 +1,45 @@
+/* Mobile-specific adjustments */
+@media (min-width: 641px) {
+
+
+    .conditions-card {
+        padding: 15px;
+    }
+
+    .forecast-days {
+        gap: 1rem;
+    }
+
+    .conditions-today {
+        grid-template-areas:
+            "header header"
+            "temps snow-today";
+    }
+
+    .temps-today,
+    .snow-today {
+        align-self: center;
+    }
+
+    #feels-like,
+    #condition,
+    #wind,
+    .snow-today {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+
+    .seven-day-forecast .forecast-days {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .conditions-div {
+        gap: 1.5rem;
+    }
+
+}

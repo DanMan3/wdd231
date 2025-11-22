@@ -113,7 +113,7 @@ dialog.modal[open] {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(26, 192, 186);
+    background-color: var(--card-border-color);
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 3rem #777;
