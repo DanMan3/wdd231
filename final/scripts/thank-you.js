@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 
 document.addEventListener('DOMContentLoaded', () => {
     renderThankYou(params);
-    saveInquiryToLocalStorage(params);
+    saveInquiry(params);
 });
 
 function renderThankYou(params) {
@@ -29,7 +29,7 @@ function renderThankYou(params) {
     `;
 }
 
-function saveInquiryToLocalStorage(params) {
+function saveInquiry(params) {
     try {
         const stored = JSON.parse(localStorage.getItem('inquiries')) ?? [];
         stored.push({

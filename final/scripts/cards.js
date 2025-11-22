@@ -1,7 +1,7 @@
 
 const cards = document.querySelector(".cards")
 try {
-    fetch("/final/data/resorts.json").then(response => response.json()).then(resorts => {
+    fetch("data/resorts.json").then(response => response.json()).then(resorts => {
         resorts.forEach((card, i) => {
             try {
                 const constructedCard = constructCard(card, i);
