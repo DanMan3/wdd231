@@ -85,7 +85,7 @@ for (var c of conditions) {
     const sevenDayForecast = document.createElement("div")
     sevenDayForecast.className = "seven-day-forecast"
     sevenDayForecast.innerHTML = `
-    <h3>7-Day Forecast</h3>
+    <h3>10-Day Forecast</h3>
     <div class="forecast-days">
     <div class="forecast-day">
     <h4>${new Date(forecastDays[0].date).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}</h4>

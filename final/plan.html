@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasatch Tracker — Home</title>
+    <title>Home | Wasatch Tracker</title>
     <meta name="description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
     <meta property="og:title" content="Wasatch Tracker — Home">
     <meta property="og:description" content="Wasatch Tracker — find your perfect Utah ski resort to visit this winter!">
     <!-- absolute image must be a url -->
-    <meta property="og:image" content="https://danman3.github.io/wdd231/final/images/og_image.png">
+    <meta property="og:image" content="https://danman3.github.io/wdd231/final/images/og_image.svg">
     <meta property="og:url" content="https://danman3.github.io/wdd231/final/index.html">
     <meta name="author" content="Daniel Bennion">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/plan.css">
     <link rel="stylesheet" href="styles/header-nav-footer.css">
     <link rel="stylesheet" href="styles/header-nav-footer-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,21 +24,19 @@
         rel="stylesheet">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script type="module" src="scripts/weather.js"></script> -->
-    <!-- <script type="module" src="scripts/index.js"></script> -->
-
 
 </head>
-
 
 
 <body>
     <header>
         <div class="business-branding">
-            <a class="brand" href="index.html">
-                <img src="images/business-logo.svg" alt="Wasatch Tracker">
-            </a>
-            <span class="site-title">Wasatch Tracker</span>
+            <div class="branding">
+                <span class="site-title">Wasatch Tracker</span>
+                <a class="brand" href="index.html">
+                    <img src="images/logo.svg" alt="Wasatch Tracker">
+                </a>
+            </div>
         </div>
 
         <button class="menu-button" aria-label="Toggle navigation menu"></button>
@@ -57,20 +54,67 @@
     </div>
 
 
-
     <main>
-
         <div class="page-width">
+            <div class="site-name">
+                <h1>Site Name: Wasatch Tracker</h1>
+                <p>I picked Wasatch Tracker because this website tracks snow conditions at ski resorts in Utah, all of
+                    which
+                    are in the Wasatch Mountain range.</p>
 
+                <div class="site-purpose">
+                    <h2>Site Purpose</h2>
+                    <p>The purpose of this site is to track snow conditions of each ski resort in Utah, as well as what
+                        the
+                        forecast is for the next ten days. In addition, users can see what price of season passes and
+                        day
+                        tickets are for each resort.</p>
+                </div>
+
+                <div class="scenarios">
+                    <h2>Scenarios</h2>
+                    <p>Where can I see all Utah ski resort snow conditions all in one place?</p>
+                    <p>What resort is the best for my difficulty level?</p>
+                </div>
+
+                <div class="color-schema">
+                    <h2>Color Schema</h2>
+                    <p class="header-footer-color">Header and footer (as shown) are in a gradient of blue and purple.
+                        Also to be used in headings.
+                    </p>
+                    <p class="card-color">Card Colors are going to be light blue with a pink border</p>
+
+                    <p class="other-headings-color">Other headings (especially those on top of the light blue border)
+                        are to be dark blue</p>
+                </div>
+
+                <div class="typography">
+                    <h2>Typography Named and Used</h2>
+                    <p>Heading text (shown above) is Oswald font. Paragraph and informational text is Roboto font.</p>
+                </div>
+
+                <div class="wireframes">
+                    <div>
+                        <h2>Wireframes</h2>
+                        <h3>Mobile</h3>
+                        <img src="images/mobile-home-wireframe.png" alt="Mobile Home Page Wireframe" loading="lazy">
+                    </div>
+                    <div>
+                        <img src="images/desktop-home-wireframe.png" alt="Desktop Home Page Wireframe" loading="lazy">
+                    </div>
+                </div>
+            </div>
         </div>
 
     </main>
+
+
 
     <footer>
 
         <div class="chamber-contact-info">
             <strong class="footer-company-name">Wasatch Tracker</strong>
-            <p class="footer-address">123 Main Street, Springville, UT 84003</p>
+            <p class="footer-address">123 Main Street, Springville, UT 84113</p>
             <p class="footer-email">info@wasatchtracker.com</p>
             <p class="footer-phone">(801) 421-9582</p>
         </div>
@@ -106,6 +150,8 @@
                     Last modified: <span id="lastModified" class="last-modified-date"></span>
                 </p>
             </div>
+
+
         </div>
 
     </footer>
